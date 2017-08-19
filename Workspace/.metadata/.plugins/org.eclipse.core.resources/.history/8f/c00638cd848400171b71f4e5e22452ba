@@ -1,0 +1,8 @@
+package com.jaketherey.openal_java;
+
+public enum SourceState {
+	INITIAL,
+	PLAYING,
+	STOPPED,
+	PAUSED
+}

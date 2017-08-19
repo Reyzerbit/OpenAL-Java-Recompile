@@ -1,0 +1,170 @@
+package com.jaketherey;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.SwingConstants;
+
+
+public class appletContent extends JFrame {
+	public appletContent(String title) {
+		super(title);
+		
+		setLayout(null);
+		
+		//Buttons
+		
+		final JButton buttonRun = new JButton("Run");
+		JButton buttonClear = new JButton("Clear");
+		
+		//Text Fields
+		
+		final JTextField field1 = new JTextField("0");
+		final JTextField field2 = new JTextField("0");
+		final JTextField field3 = new JTextField("0");
+		final JTextField field4 = new JTextField("0");
+		final JTextField field5 = new JTextField("0");
+		final JTextField field6 = new JTextField("0");
+		final JTextField field7 = new JTextField("0");
+		final JTextField field8 = new JTextField("0");
+		final JTextField field9 = new JTextField("0");
+		final JTextField field10 = new JTextField("0");
+		
+		final JTextField units = new JTextField("0");
+		
+		//Labels
+		final JLabel title1 = new JLabel ("Fixed Costs");
+		final JLabel title2 = new JLabel ("Variable Costs");
+		
+		final JLabel finalAnswer = new JLabel();
+		
+		final JLabel answerLabel = new JLabel ("Units To Break Even:");
+		final JLabel unitsLabel = new JLabel ("Cost / Units:");
+		
+		//Edit Facts
+		
+		////Set Bounds///Distance X///Distance Y///Length X///Width Y////
+		
+        buttonRun.setBounds(50, 335, 150, 30);
+        buttonClear.setBounds(200, 335, 150, 30);
+        
+        field1.setBounds(50, 50, 150, 30);
+        field2.setBounds(50, 90, 150, 30);
+        field3.setBounds(50, 130, 150, 30);
+        field4.setBounds(50, 170, 150, 30);
+        field5.setBounds(50, 210, 150, 30);
+        field6.setBounds(200, 50, 150, 30);
+        field7.setBounds(200, 90, 150, 30);
+        field8.setBounds(200, 130, 150, 30);
+        field9.setBounds(200, 170, 150, 30);
+        field10.setBounds(200, 210, 150, 30);
+        
+        units.setBounds(200, 255, 150, 30);
+        
+        finalAnswer.setBounds(200, 290, 150, 30);
+        
+        title1.setBounds(50, 10, 150, 30);
+        title2.setBounds(200, 10, 150, 30);
+        
+        answerLabel.setBounds(50, 290, 150, 30);
+        unitsLabel.setBounds(50, 255, 150, 30);
+        
+        //Change Stuff
+        
+        title1.setHorizontalAlignment(SwingConstants.CENTER);
+        title2.setHorizontalAlignment(SwingConstants.CENTER);
+        answerLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        unitsLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        finalAnswer.setHorizontalAlignment(SwingConstants.CENTER);
+        
+        //Add Crap
+		
+        add(buttonClear);
+		add(buttonRun);
+		
+		add(answerLabel);
+		add(unitsLabel);
+		
+		add(field1);
+		add(field2);
+		add(field3);
+		add(field4);
+		add(field5);
+		add(field6);
+		add(field7);
+		add(field8);
+		add(field9);
+		add(field10);
+		
+		add(units);
+		
+		add(finalAnswer);
+		
+		add(title1);
+		add(title2);
+		
+		buttonRun.addActionListener(new ActionListener() {
+
+			@Override
+			
+			public void actionPerformed(ActionEvent e) {
+				
+				double answer = Double.parseDouble(field1.getText());
+				double answer1 = Double.parseDouble(field2.getText());
+				double answer2 = Double.parseDouble(field3.getText());
+				double answer3 = Double.parseDouble(field4.getText());
+				double answer4 = Double.parseDouble(field5.getText());
+				double answer5 = Double.parseDouble(field6.getText());
+				double answer6 = Double.parseDouble(field7.getText());
+				double answer7 = Double.parseDouble(field8.getText());
+				double answer8 = Double.parseDouble(field9.getText());
+				double answer9 = Double.parseDouble(field10.getText());
+				
+				double costPerUnit = Double.parseDouble(units.getText());
+				
+				double fixedCosts = (answer + answer1 + answer2 + answer3 + answer4);
+				
+				double variableCosts = (answer5 + answer6 + answer7 + answer8 + answer9);
+				
+				calcBreak 
+				
+				finalAnswer.setText(complete);
+				
+				buttonRun.setVisible(false);
+				
+			}
+			
+		});
+		
+		buttonClear.addActionListener(new ActionListener() {
+
+			@Override
+			
+			public void actionPerformed(ActionEvent e) {
+				
+				field1.setText("0");
+				field2.setText("0");
+				field3.setText("0");
+				field4.setText("0");
+				field5.setText("0");
+				field6.setText("0");
+				field7.setText("0");
+				field8.setText("0");
+				field9.setText("0");
+				field10.setText("0");
+				finalAnswer.setText("");
+				units.setText("0");
+				
+				buttonRun.setVisible(true);
+				
+			}
+			
+		});
+		
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.jaketherey;
+
+import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
+
+public class applet {
+
+	public static void main(String[] args) {
+		
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				
+			JFrame frame = new appletContent("Break-Even Solver");
+			
+			frame.setVisible(true);
+			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			frame.setSize(400, 400);
+			frame.setResizable(false);
+			frame.setLocationRelativeTo(null);
+			}
+			
+		});
+		
+	}
+
+}

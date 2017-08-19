@@ -1,0 +1,22 @@
+package com.jaketherey;
+
+public class calcBreak {
+	
+	public String calc(int costPerUnit, int fixedCosts, int variableCosts){
+		
+		double bottom = (costPerUnit - variableCosts);
+		
+		double finalAnswerDouble = (fixedCosts / bottom);
+		
+		double rounded = Math.round(finalAnswerDouble);
+		
+		if(rounded <= 0.0){
+			rounded = 1.0;
+		}
+		
+		String complete = Double.toString(rounded);
+		
+		return complete;
+	}
+
+}

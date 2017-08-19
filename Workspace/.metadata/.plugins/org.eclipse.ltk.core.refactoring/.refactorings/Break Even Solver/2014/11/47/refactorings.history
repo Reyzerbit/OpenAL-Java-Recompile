@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.jaketherey&apos; to &apos;Break-Even Calculator/src&apos;&#x0D;&#x0A;- Original project: &apos;Break Even Solver&apos;&#x0D;&#x0A;- Destination element: &apos;Break-Even Calculator/src&apos;&#x0D;&#x0A;- Original element: &apos;Break Even Solver/src/com.jaketherey&apos;" description="Copy package" destination="=Break-Even Calculator/src" element1="/src&lt;com.jaketherey" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1416604949621" version="1.0"/>
+</session>

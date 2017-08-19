@@ -1,0 +1,6 @@
+package com.jaketherey.openal_java.jna;
+
+
+public class ALCcontext extends Structure implements Structure.ByReference {
+	public byte dummy;
+}

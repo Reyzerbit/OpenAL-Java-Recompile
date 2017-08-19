@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.jaketherey.Thread&apos; to &apos;GameThread&apos;&#x0A;- Original project: &apos;Game&apos;&#x0A;- Original element: &apos;com.jaketherey.Thread&apos;&#x0A;- Renamed element: &apos;com.jaketherey.GameThread&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Thread&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.jaketherey{Thread.java[Thread" matchStrategy="1" name="GameThread" qualified="false" references="true" similarDeclarations="false" stamp="1418321025763" textual="false" version="1.0"/>
+</session>
